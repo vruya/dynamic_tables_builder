@@ -13,7 +13,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /app/
 
-# Run tests and migrations
-RUN chmod +x compose/start
+COPY ./compose/start /start
+RUN sed -i 's/\r$//g' /start
+RUN chmod +x /start
 
 CMD ['gunicorn', '--bind', '0.0.0.0:8000', 'table_builder.wsgi:application']

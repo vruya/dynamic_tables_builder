@@ -17,7 +17,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/Dockerfile
-    command: ./compose/start
+    command: /start
     volumes:
       - .:/app
     ports:
