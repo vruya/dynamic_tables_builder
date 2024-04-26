@@ -1,4 +1,4 @@
-# dynamic_tables_builder# Dynamic Tables - Backend API
+# dynamic_tables_builder
 
 Dynamic Tables is a backend API that allows you to create and manage dynamic tables in your application.
 
@@ -14,13 +14,13 @@ Before running the project, make sure you have the following tools installed:
 To run the project, follow these steps:
 
 1. Clone the repository:
-git clone link_to_repository
+- git clone link_to_repository
 
 2. Navigate to the project directory:
-cd dynamic-tables-backend
+- cd dynamic-tables-backend
 
 3. Run the project using Docker Compose:
-docker-compose up --build
+- docker-compose up --build
 
 ## Configuration
 
